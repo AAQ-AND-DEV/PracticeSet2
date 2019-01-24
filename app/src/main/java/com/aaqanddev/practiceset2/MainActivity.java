@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
         int weekend = 9;
         int optimalHours = 7 * 8;
 
-        int actualHours = weekday;
-        actualHours = actualHours * 5 + weekend * 2;
+        int actualHours = weekday * 5 + weekend * 2;
         int solution = optimalHours - actualHours;
         display(solution);
     }
