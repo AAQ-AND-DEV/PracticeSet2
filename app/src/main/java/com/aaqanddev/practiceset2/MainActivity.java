@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         String firstName = "Lyla";
         String lastName = "Fujiwara";
         String contactInfo = firstName + " " + lastName;
-        contactInfo = "<" + lastName + "." + firstName + "@justjava.com>";
+        contactInfo = contactInfo + "<" + lastName.toLowerCase() + "." + firstName.toLowerCase() + "@justjava.com>";
         display(contactInfo);
     }
 
