@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setTextSize(48);
         tv.setWidth(48);
         tv.setHeight(96);
-        tv.setEllipsize(TextUtils.TruncateAt.END);
+        tv.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         tv.setShadowLayer(5, 1, 1, Color.parseColor("#000000"));
         tv.setTextColor(Color.parseColor("#dd2121"));
         //interesting that #ddd didn't work as shorthand for hexadecimal #dddddd
