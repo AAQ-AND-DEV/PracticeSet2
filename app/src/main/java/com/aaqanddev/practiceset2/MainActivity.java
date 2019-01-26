@@ -1,5 +1,6 @@
 package com.aaqanddev.practiceset2;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
@@ -9,13 +10,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
-        String firstName = "Lyla";
-        String lastName = "Fujiwara";
-        String contactInfo = firstName + " " + lastName;
-        contactInfo = contactInfo + "<" + lastName.toLowerCase() + "." + firstName.toLowerCase() + "@justjava.com>";
-        display(contactInfo);
+        TextView tv = new TextView(this);
+        tv.setText("wow!");
+        tv.setAllCaps(true);
+        tv.setTextSize(48);
+        tv.setWidth(48);
+        tv.setHeight(96);
+        tv.setShadowLayer(5, 1, 1, Color.parseColor("#000000"));
+        tv.setTextColor(Color.parseColor("#dd2121"));
+        //interesting that #ddd didn't work as shorthand for hexadecimal #dddddd
+        tv.setBackgroundColor(Color.parseColor("#dddddd"));
+        setContentView(tv);
     }
 
     /**
