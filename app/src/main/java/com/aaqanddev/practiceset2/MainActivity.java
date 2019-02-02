@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
 
         //TODO find out what how to use marquee
         //tv.setEllipsize(TextUtils.TruncateAt.MARQUEE);
-        tv.setEllipsize(TextUtils.TruncateAt.END);
+        //tv.setEllipsize(TextUtils.TruncateAt.END);
         tv.setShadowLayer(5, 1, 1, Color.parseColor("#000000"));
         tv.setTextColor(Color.parseColor("#dd2121"));
         //interesting that #ddd didn't work as shorthand for hexadecimal #dddddd
         tv.setBackgroundColor(Color.parseColor("#dddddd"));
-        tv.setMaxLines(2);
+        //tv.setMaxLines(2);
         setContentView(tv);
     }
 
