@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,8 +18,11 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("wow! THIS IS GOING TO BE A BERRRRRRRRRYYYYYYYYYYYYYY LONG STRINGGGGGGGGGGGGGGG");
         tv.setAllCaps(true);
         tv.setTextSize(48);
-        tv.setWidth(48);
-        tv.setHeight(96);
+        //tv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 96));
+      tv.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+        //tv.setWidth(48);
+        //tv.setHeight(96);
+
         //TODO find out what how to use marquee
         //tv.setEllipsize(TextUtils.TruncateAt.MARQUEE);
         tv.setEllipsize(TextUtils.TruncateAt.END);
