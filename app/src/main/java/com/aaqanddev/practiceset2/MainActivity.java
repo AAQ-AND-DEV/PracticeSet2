@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
         // PASTE CODE YOU WANT TO TEST HERE
+        //TODO practice assembling a whole ViewGroup
+
         TextView tv = new TextView(this);
         tv.setText("wow! THIS IS GOING TO BE A BERRRRRRRRRYYYYYYYYYYYYYY LONG STRINGGGGGGGGGGGGGGG");
         tv.setAllCaps(true);
